@@ -1,0 +1,5 @@
+.vscode/
+
+*.map
+public/css/*
+public/js/*
