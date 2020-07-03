@@ -14,7 +14,7 @@ window.addEventListener('resize', () => {
 
 // balls
 const balls: {x: number, y: number, r: number, s: number, a: number}[] = [];
-for(let i = 0; i < 2400; i++) {
+for(let i = 0; i < 1000; i++) {
     balls.push({
         x: random(1, canvas.width),
         y: random(1, canvas.height),

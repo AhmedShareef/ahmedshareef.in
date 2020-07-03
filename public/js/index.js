@@ -11,7 +11,7 @@ window.addEventListener('resize', function () {
 });
 // balls
 var balls = [];
-for (var i = 0; i < 2400; i++) {
+for (var i = 0; i < 1000; i++) {
     balls.push({
         x: random(1, canvas.width),
         y: random(1, canvas.height),
