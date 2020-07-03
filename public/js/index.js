@@ -4,6 +4,11 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
 var box = canvas.getBoundingClientRect();
+window.addEventListener('resize', function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    box = canvas.getBoundingClientRect();
+});
 // balls
 var balls = [];
 for (var i = 0; i < 2400; i++) {

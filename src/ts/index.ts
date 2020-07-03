@@ -1,10 +1,16 @@
 const canvas: HTMLCanvasElement = document.querySelector('canvas')!;
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight
+canvas.height = window.innerHeight;
 
 const c = canvas.getContext('2d')!;
-const box = canvas.getBoundingClientRect()!;
+let box = canvas.getBoundingClientRect()!;
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    box = canvas.getBoundingClientRect();
+});
 
 // balls
 const balls: {x: number, y: number, r: number, s: number, a: number}[] = [];
