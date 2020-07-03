@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .container {
+  text-align: center;
+  color: #fff;
+  padding: 0 30px;
+}
+.content .container h1 {
+  font-family: "Clicker Script";
+  font-size: 5em;
+  margin-bottom: 0;
+}
+.content .container h4 {
+  font-size: 1.75em;
+  margin-top: 0;
+  color: #ede6e3;
+}
+.content .container .links a {
+  display: inline-block;
+  padding: 0 10px;
+  color: #ddd;
+  font-size: 2em;
+  transform: scale(1);
+  will-change: transform;
+  transition: 0.2s;
+}
+.content .container .links a:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */
